@@ -1,0 +1,6 @@
+framework module Pods_DenveriOSMeetupRealmDemo {
+  umbrella header "Pods-DenveriOSMeetupRealmDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

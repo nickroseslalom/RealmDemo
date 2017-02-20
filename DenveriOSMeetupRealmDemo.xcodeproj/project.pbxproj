@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		577DC0E81E5B97A80042A6C9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577DC0E71E5B97A80042A6C9 /* MapKit.framework */; };
+		577DC0EA1E5B9BC40042A6C9 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577DC0E91E5B9BC40042A6C9 /* LocationModel.swift */; };
+		577DC0EC1E5BA0A90042A6C9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577DC0EB1E5BA0A90042A6C9 /* CoreLocation.framework */; };
+		57BDBBA91E5B95F300AAE0A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BDBBA81E5B95F300AAE0A9 /* AppDelegate.swift */; };
+		57BDBBAB1E5B95F300AAE0A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BDBBAA1E5B95F300AAE0A9 /* ViewController.swift */; };
+		57BDBBAE1E5B95F300AAE0A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57BDBBAC1E5B95F300AAE0A9 /* Main.storyboard */; };
+		57BDBBB01E5B95F300AAE0A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57BDBBAF1E5B95F300AAE0A9 /* Assets.xcassets */; };
+		57BDBBB31E5B95F300AAE0A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57BDBBB11E5B95F300AAE0A9 /* LaunchScreen.storyboard */; };
+		E91624D0C4C969A9F63A0A3E /* Pods_DenveriOSMeetupRealmDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE251B7BE770E2ECEE79F811 /* Pods_DenveriOSMeetupRealmDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		27191E7934F037F58F5EBB02 /* Pods-DenveriOSMeetupRealmDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DenveriOSMeetupRealmDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DenveriOSMeetupRealmDemo/Pods-DenveriOSMeetupRealmDemo.release.xcconfig"; sourceTree = "<group>"; };
+		577DC0E71E5B97A80042A6C9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		577DC0E91E5B9BC40042A6C9 /* LocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		577DC0EB1E5BA0A90042A6C9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		57BDBBA51E5B95F300AAE0A9 /* DenveriOSMeetupRealmDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DenveriOSMeetupRealmDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		57BDBBA81E5B95F300AAE0A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		57BDBBAA1E5B95F300AAE0A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		57BDBBAD1E5B95F300AAE0A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		57BDBBAF1E5B95F300AAE0A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		57BDBBB21E5B95F300AAE0A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		57BDBBB41E5B95F300AAE0A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A63E8491D50868E14BF933BF /* Pods-DenveriOSMeetupRealmDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DenveriOSMeetupRealmDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DenveriOSMeetupRealmDemo/Pods-DenveriOSMeetupRealmDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		EE251B7BE770E2ECEE79F811 /* Pods_DenveriOSMeetupRealmDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DenveriOSMeetupRealmDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		57BDBBA21E5B95F300AAE0A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				577DC0EC1E5BA0A90042A6C9 /* CoreLocation.framework in Frameworks */,
+				577DC0E81E5B97A80042A6C9 /* MapKit.framework in Frameworks */,
+				E91624D0C4C969A9F63A0A3E /* Pods_DenveriOSMeetupRealmDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4AB4B7099ACBDCEE475624F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A63E8491D50868E14BF933BF /* Pods-DenveriOSMeetupRealmDemo.debug.xcconfig */,
+				27191E7934F037F58F5EBB02 /* Pods-DenveriOSMeetupRealmDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		57BDBB9C1E5B95F300AAE0A9 = {
+			isa = PBXGroup;
+			children = (
+				57BDBBA71E5B95F300AAE0A9 /* DenveriOSMeetupRealmDemo */,
+				57BDBBA61E5B95F300AAE0A9 /* Products */,
+				4AB4B7099ACBDCEE475624F6 /* Pods */,
+				E6B35D0A115D1FA3996BD5D8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		57BDBBA61E5B95F300AAE0A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57BDBBA51E5B95F300AAE0A9 /* DenveriOSMeetupRealmDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57BDBBA71E5B95F300AAE0A9 /* DenveriOSMeetupRealmDemo */ = {
+			isa = PBXGroup;
+			children = (
+				57BDBBA81E5B95F300AAE0A9 /* AppDelegate.swift */,
+				57BDBBAA1E5B95F300AAE0A9 /* ViewController.swift */,
+				57BDBBAC1E5B95F300AAE0A9 /* Main.storyboard */,
+				57BDBBAF1E5B95F300AAE0A9 /* Assets.xcassets */,
+				57BDBBB11E5B95F300AAE0A9 /* LaunchScreen.storyboard */,
+				57BDBBB41E5B95F300AAE0A9 /* Info.plist */,
+				577DC0E91E5B9BC40042A6C9 /* LocationModel.swift */,
+			);
+			path = DenveriOSMeetupRealmDemo;
+			sourceTree = "<group>";
+		};
+		E6B35D0A115D1FA3996BD5D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				577DC0EB1E5BA0A90042A6C9 /* CoreLocation.framework */,
+				577DC0E71E5B97A80042A6C9 /* MapKit.framework */,
+				EE251B7BE770E2ECEE79F811 /* Pods_DenveriOSMeetupRealmDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		57BDBBA41E5B95F300AAE0A9 /* DenveriOSMeetupRealmDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57BDBBB71E5B95F300AAE0A9 /* Build configuration list for PBXNativeTarget "DenveriOSMeetupRealmDemo" */;
+			buildPhases = (
+				FAF1D46ECDCDEE9ED32FED56 /* [CP] Check Pods Manifest.lock */,
+				57BDBBA11E5B95F300AAE0A9 /* Sources */,
+				57BDBBA21E5B95F300AAE0A9 /* Frameworks */,
+				57BDBBA31E5B95F300AAE0A9 /* Resources */,
+				84FC3DB2CDEAA7359FC43E85 /* [CP] Embed Pods Frameworks */,
+				BC57AA4675135D46E762B35B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DenveriOSMeetupRealmDemo;
+			productName = DenveriOSMeetupRealmDemo;
+			productReference = 57BDBBA51E5B95F300AAE0A9 /* DenveriOSMeetupRealmDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		57BDBB9D1E5B95F300AAE0A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Slalom Consulting";
+				TargetAttributes = {
+					57BDBBA41E5B95F300AAE0A9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = N7PRDZ7X24;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 57BDBBA01E5B95F300AAE0A9 /* Build configuration list for PBXProject "DenveriOSMeetupRealmDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 57BDBB9C1E5B95F300AAE0A9;
+			productRefGroup = 57BDBBA61E5B95F300AAE0A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57BDBBA41E5B95F300AAE0A9 /* DenveriOSMeetupRealmDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		57BDBBA31E5B95F300AAE0A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57BDBBB31E5B95F300AAE0A9 /* LaunchScreen.storyboard in Resources */,
+				57BDBBB01E5B95F300AAE0A9 /* Assets.xcassets in Resources */,
+				57BDBBAE1E5B95F300AAE0A9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84FC3DB2CDEAA7359FC43E85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DenveriOSMeetupRealmDemo/Pods-DenveriOSMeetupRealmDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC57AA4675135D46E762B35B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DenveriOSMeetupRealmDemo/Pods-DenveriOSMeetupRealmDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAF1D46ECDCDEE9ED32FED56 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		57BDBBA11E5B95F300AAE0A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57BDBBAB1E5B95F300AAE0A9 /* ViewController.swift in Sources */,
+				577DC0EA1E5B9BC40042A6C9 /* LocationModel.swift in Sources */,
+				57BDBBA91E5B95F300AAE0A9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		57BDBBAC1E5B95F300AAE0A9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57BDBBAD1E5B95F300AAE0A9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		57BDBBB11E5B95F300AAE0A9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57BDBBB21E5B95F300AAE0A9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		57BDBBB51E5B95F300AAE0A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		57BDBBB61E5B95F300AAE0A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		57BDBBB81E5B95F300AAE0A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A63E8491D50868E14BF933BF /* Pods-DenveriOSMeetupRealmDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N7PRDZ7X24;
+				INFOPLIST_FILE = DenveriOSMeetupRealmDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.slalom.DenveriOSMeetupRealmDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		57BDBBB91E5B95F300AAE0A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27191E7934F037F58F5EBB02 /* Pods-DenveriOSMeetupRealmDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N7PRDZ7X24;
+				INFOPLIST_FILE = DenveriOSMeetupRealmDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.slalom.DenveriOSMeetupRealmDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		57BDBBA01E5B95F300AAE0A9 /* Build configuration list for PBXProject "DenveriOSMeetupRealmDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57BDBBB51E5B95F300AAE0A9 /* Debug */,
+				57BDBBB61E5B95F300AAE0A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57BDBBB71E5B95F300AAE0A9 /* Build configuration list for PBXNativeTarget "DenveriOSMeetupRealmDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57BDBBB81E5B95F300AAE0A9 /* Debug */,
+				57BDBBB91E5B95F300AAE0A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 57BDBB9D1E5B95F300AAE0A9 /* Project object */;
+}
