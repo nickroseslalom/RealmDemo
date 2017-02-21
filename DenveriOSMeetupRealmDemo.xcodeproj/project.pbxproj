@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5750E2491E5BF91A00C6E43A /* RealmDataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750E2481E5BF91A00C6E43A /* RealmDataGenerator.swift */; };
+		57634A151E5CA89E00D45046 /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 57634A141E5CA89E00D45046 /* locations.json */; };
 		577DC0E81E5B97A80042A6C9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577DC0E71E5B97A80042A6C9 /* MapKit.framework */; };
-		577DC0EA1E5B9BC40042A6C9 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577DC0E91E5B9BC40042A6C9 /* LocationModel.swift */; };
+		577DC0EA1E5B9BC40042A6C9 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577DC0E91E5B9BC40042A6C9 /* Location.swift */; };
 		577DC0EC1E5BA0A90042A6C9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577DC0EB1E5BA0A90042A6C9 /* CoreLocation.framework */; };
 		57BDBBA91E5B95F300AAE0A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BDBBA81E5B95F300AAE0A9 /* AppDelegate.swift */; };
 		57BDBBAB1E5B95F300AAE0A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BDBBAA1E5B95F300AAE0A9 /* ViewController.swift */; };
@@ -21,9 +21,9 @@
 
 /* Begin PBXFileReference section */
 		27191E7934F037F58F5EBB02 /* Pods-DenveriOSMeetupRealmDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DenveriOSMeetupRealmDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DenveriOSMeetupRealmDemo/Pods-DenveriOSMeetupRealmDemo.release.xcconfig"; sourceTree = "<group>"; };
-		5750E2481E5BF91A00C6E43A /* RealmDataGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmDataGenerator.swift; sourceTree = "<group>"; };
+		57634A141E5CA89E00D45046 /* locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
 		577DC0E71E5B97A80042A6C9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		577DC0E91E5B9BC40042A6C9 /* LocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		577DC0E91E5B9BC40042A6C9 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		577DC0EB1E5BA0A90042A6C9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		57BDBBA51E5B95F300AAE0A9 /* DenveriOSMeetupRealmDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DenveriOSMeetupRealmDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57BDBBA81E5B95F300AAE0A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,14 +80,14 @@
 		57BDBBA71E5B95F300AAE0A9 /* DenveriOSMeetupRealmDemo */ = {
 			isa = PBXGroup;
 			children = (
+				57634A141E5CA89E00D45046 /* locations.json */,
 				57BDBBA81E5B95F300AAE0A9 /* AppDelegate.swift */,
 				57BDBBAA1E5B95F300AAE0A9 /* ViewController.swift */,
 				57BDBBAC1E5B95F300AAE0A9 /* Main.storyboard */,
 				57BDBBAF1E5B95F300AAE0A9 /* Assets.xcassets */,
 				57BDBBB11E5B95F300AAE0A9 /* LaunchScreen.storyboard */,
 				57BDBBB41E5B95F300AAE0A9 /* Info.plist */,
-				577DC0E91E5B9BC40042A6C9 /* LocationModel.swift */,
-				5750E2481E5BF91A00C6E43A /* RealmDataGenerator.swift */,
+				577DC0E91E5B9BC40042A6C9 /* Location.swift */,
 			);
 			path = DenveriOSMeetupRealmDemo;
 			sourceTree = "<group>";
@@ -167,6 +167,7 @@
 			files = (
 				57BDBBB31E5B95F300AAE0A9 /* LaunchScreen.storyboard in Resources */,
 				57BDBBB01E5B95F300AAE0A9 /* Assets.xcassets in Resources */,
+				57634A151E5CA89E00D45046 /* locations.json in Resources */,
 				57BDBBAE1E5B95F300AAE0A9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,8 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57BDBBAB1E5B95F300AAE0A9 /* ViewController.swift in Sources */,
-				5750E2491E5BF91A00C6E43A /* RealmDataGenerator.swift in Sources */,
-				577DC0EA1E5B9BC40042A6C9 /* LocationModel.swift in Sources */,
+				577DC0EA1E5B9BC40042A6C9 /* Location.swift in Sources */,
 				57BDBBA91E5B95F300AAE0A9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -21,12 +21,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let realm = try! Realm()
         let config = realm.configuration
         
-        print("File URL: %@", config.fileURL)
+        print("File URL: %@", config.fileURL!)
         
-        /*
         try! realm.write {
             realm.deleteAll()
-        } */
+        }
         
         return true
     }

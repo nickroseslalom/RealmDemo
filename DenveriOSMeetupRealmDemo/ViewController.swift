@@ -16,8 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var button: UIButton!
     
-    let realmDataGenerator: RealmDataGenerator = RealmDataGenerator()
-    var results: Results<LocationModel>?
+    var results: Results<Location>?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -54,7 +53,7 @@ class ViewController: UIViewController {
     func updateResultsWith(maximumLatitude: CLLocationDegrees, minimumLatitude: CLLocationDegrees, maximumLongitude: CLLocationDegrees, minimumLongitude: CLLocationDegrees) {
         let realm = try! Realm()
         
-        self.results = realm.objects(LocationModel.self).filter("latitude <= %f AND latitude >= %f AND longitude <= %f AND longitude >= %f", maximumLatitude, minimumLatitude, maximumLongitude, minimumLongitude)
+        self.results = realm.objects(Location.self).filter("latitude <= %f AND latitude >= %f AND longitude <= %f AND longitude >= %f", maximumLatitude, minimumLatitude, maximumLongitude, minimumLongitude)
         
         updateAnnotations()
     }
@@ -64,34 +63,13 @@ class ViewController: UIViewController {
             return
         }
         
-        //mapView.removeAnnotations(mapView.annotations)
-        
-        let maxCount = results.count > 20 ? 20 : results.count
-        
-        for index in 0...maxCount - 1 {
-            let model = results[index]
+        results.forEach { (model) in
             let coordinate = CLLocationCoordinate2D(latitude: CLLocationDegrees(model.latitude), longitude: CLLocationDegrees(model.longitude))
             let annotation = MKPointAnnotation()
             annotation.coordinate = coordinate
             mapView.addAnnotation(annotation)
         }
     }
-    
-    func loadRealm() {
-        // Get the default Realm
-        let realm = try! Realm()
-        for index in 0...1000 {
-            let locationModel = LocationModel()
-            locationModel.latitude = Float(index)
-            locationModel.longitude = Float(index)
-            
-            try! realm.write {
-                realm.add(locationModel)
-            }
-        }
-        
-    }
-
 }
 
 extension ViewController: MKMapViewDelegate {
