@@ -23,10 +23,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         print("File URL: %@", config.fileURL!)
         
-        try! realm.write {
-            realm.deleteAll()
-        }
-        
         return true
     }
 
