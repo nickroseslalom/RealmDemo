@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var button: UIButton!
     
+    var realmDataGenerator: RealmDataGenerator = RealmDataGenerator()
     var results: Results<Location>?
     
     override func awakeFromNib() {
@@ -28,17 +29,6 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        /*
-        realmDataGenerator.generateDataWith {
-            let alertController = UIAlertController(title: "Completed Write Transactions", message: "Inserted 100000 Records.", preferredStyle: .alert)
-            
-            let action = UIAlertAction(title: "OK", style: .default, handler: nil)
-            
-            alertController.addAction(action)
-            
-            self.present(alertController, animated: true, completion: nil)
-        } */
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,7 +37,14 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonTapped(_ sender: Any) {
-        
+        realmDataGenerator.generateData {
+            let alertController = UIAlertController(title: "Completed Write Transactions", message: "Inserted 100000 Records.", preferredStyle: .alert)
+            let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+            
+            alertController.addAction(action)
+            
+            self.present(alertController, animated: true, completion: nil)
+        }
     }
     
     func updateResultsWith(maximumLatitude: CLLocationDegrees, minimumLatitude: CLLocationDegrees, maximumLongitude: CLLocationDegrees, minimumLongitude: CLLocationDegrees) {
