@@ -19,29 +19,6 @@ class LiveViewController: UIViewController {
     var realmDataGenerator: RealmDataGenerator = RealmDataGenerator()
     var results: Results<Location>?
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    @IBAction func buttonTapped(_ sender: Any) {
-        realmDataGenerator.generateDataIn(region: mapView.region) { 
-            
-        }
-    }
-    
     func updateResultsWith(maximumLatitude: CLLocationDegrees, minimumLatitude: CLLocationDegrees, maximumLongitude: CLLocationDegrees, minimumLongitude: CLLocationDegrees) {
         let realm = try! Realm()
         
@@ -71,8 +48,6 @@ class LiveViewController: UIViewController {
 
 extension LiveViewController: MKMapViewDelegate {
     public func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
-        print("User Location: %@", userLocation)
-        
         let region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 10000, 10000);
         self.mapView.setRegion(region, animated: true)
     }

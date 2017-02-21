@@ -83,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				57B842C71E5CEBCA0031D0BF /* RealmDataGenerator.swift */,
+				577DC0E91E5B9BC40042A6C9 /* Location.swift */,
 				57BDBBA81E5B95F300AAE0A9 /* AppDelegate.swift */,
 				57B842C91E5CF6DA0031D0BF /* ActionViewController.swift */,
 				57BDBBAA1E5B95F300AAE0A9 /* LiveViewController.swift */,
@@ -90,7 +91,6 @@
 				57BDBBAF1E5B95F300AAE0A9 /* Assets.xcassets */,
 				57BDBBB11E5B95F300AAE0A9 /* LaunchScreen.storyboard */,
 				57BDBBB41E5B95F300AAE0A9 /* Info.plist */,
-				577DC0E91E5B9BC40042A6C9 /* Location.swift */,
 			);
 			path = DenveriOSMeetupRealmDemo;
 			sourceTree = "<group>";

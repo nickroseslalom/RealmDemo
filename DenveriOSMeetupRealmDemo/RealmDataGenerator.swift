@@ -10,42 +10,7 @@ import Foundation
 import RealmSwift
 import MapKit
 
-class RealmDataGenerator {
-    
-    func generateDataIn(region: MKCoordinateRegion, completion: @escaping () -> ()) {
-        DispatchQueue.global(qos: .background).async {
-            let maximumLatitude = region.center.latitude + region.span.latitudeDelta
-            let minimumLatitude = region.center.latitude - region.span.latitudeDelta
-            let maximumLongitude = region.center.longitude + region.span.longitudeDelta
-            let minimumLongitude = region.center.longitude - region.span.longitudeDelta
-            
-            // Get Realm in background thread
-            let realm = try! Realm()
-            
-            for _ in 0...10 {
-                // Begin writing data
-                let randomLatitude = self.randomFloat(min: Float(minimumLatitude), max: Float(maximumLatitude))
-                let randomLongitude = self.randomFloat(min: Float(minimumLongitude), max: Float(maximumLongitude))
-                
-                let model = Location()
-                model.latitude = randomLatitude
-                model.longitude = randomLongitude
-                
-                let start = NSDate()
-                try! realm.write {
-                    realm.add(model)
-                }
-                let end = NSDate()
-                let time = end.timeIntervalSince(start as Date)
-            }
-            
-            
-            DispatchQueue.main.async {
-                completion()
-            }
-        }
-    }
-    
+class RealmDataGenerator {    
     func generateRandomData(completion: @escaping () -> ()) {
         DispatchQueue.global(qos: .background).async {
             let maximumLatitude: Float = 47.604116
