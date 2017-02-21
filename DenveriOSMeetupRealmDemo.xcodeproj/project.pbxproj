@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5750E2491E5BF91A00C6E43A /* RealmDataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750E2481E5BF91A00C6E43A /* RealmDataGenerator.swift */; };
 		577DC0E81E5B97A80042A6C9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577DC0E71E5B97A80042A6C9 /* MapKit.framework */; };
 		577DC0EA1E5B9BC40042A6C9 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577DC0E91E5B9BC40042A6C9 /* LocationModel.swift */; };
 		577DC0EC1E5BA0A90042A6C9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577DC0EB1E5BA0A90042A6C9 /* CoreLocation.framework */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		27191E7934F037F58F5EBB02 /* Pods-DenveriOSMeetupRealmDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DenveriOSMeetupRealmDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DenveriOSMeetupRealmDemo/Pods-DenveriOSMeetupRealmDemo.release.xcconfig"; sourceTree = "<group>"; };
+		5750E2481E5BF91A00C6E43A /* RealmDataGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmDataGenerator.swift; sourceTree = "<group>"; };
 		577DC0E71E5B97A80042A6C9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		577DC0E91E5B9BC40042A6C9 /* LocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		577DC0EB1E5BA0A90042A6C9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -85,6 +87,7 @@
 				57BDBBB11E5B95F300AAE0A9 /* LaunchScreen.storyboard */,
 				57BDBBB41E5B95F300AAE0A9 /* Info.plist */,
 				577DC0E91E5B9BC40042A6C9 /* LocationModel.swift */,
+				5750E2481E5BF91A00C6E43A /* RealmDataGenerator.swift */,
 			);
 			path = DenveriOSMeetupRealmDemo;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57BDBBAB1E5B95F300AAE0A9 /* ViewController.swift in Sources */,
+				5750E2491E5BF91A00C6E43A /* RealmDataGenerator.swift in Sources */,
 				577DC0EA1E5B9BC40042A6C9 /* LocationModel.swift in Sources */,
 				57BDBBA91E5B95F300AAE0A9 /* AppDelegate.swift in Sources */,
 			);
