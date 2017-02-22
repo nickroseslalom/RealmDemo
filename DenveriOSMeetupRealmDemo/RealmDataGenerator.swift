@@ -21,7 +21,7 @@ class RealmDataGenerator {
             // Get Realm in background thread
             let realm = try! Realm()
             
-            for _ in 0...10000 {
+            for _ in 0...9000 {
                 // Begin writing data
                 let randomLatitude = self.randomFloat(min: minimumLatitude, max: maximumLatitude)
                 let randomLongitude = self.randomFloat(min: minimumLongitude, max: maximumLongitude)
